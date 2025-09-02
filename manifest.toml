@@ -15,7 +15,7 @@ license = "MPL-2.0"
 code = "https://github.com/RobBrazier/readflow"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = [ "amd64", "arm64" ]
 multi_instance = true
@@ -78,3 +78,6 @@ ram.runtime = "50M"
     [resources.system_user]
 
     [resources.install_dir]
+
+    [resources.go]
+    version = "1.23.2"
