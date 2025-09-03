@@ -72,8 +72,10 @@ ram.runtime = "50M"
     rename = "readflow"
 
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset.amd64 = ".*_linux_amd64$"
-    autoupdate.asset.arm64 = ".*_linux_arm64$"
+
+    autoupdate.asset.amd64 = ".*linux_amd64$"
+    autoupdate.asset.arm64 = ".*linux_arm64$"
+
 
     [resources.system_user]
 

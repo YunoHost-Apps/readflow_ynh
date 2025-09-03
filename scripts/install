@@ -22,7 +22,7 @@ chmod -R 750 "$install_dir"
 #=================================================
 ynh_script_progression "Installing dependencies..."
 
-#REMOVEME? ynh_hide_warnings #REMOVEME? ynh_go_install
+
 
 pushd "$install_dir/"
 	export GOPATH="$install_dir/build/go"
@@ -30,7 +30,7 @@ pushd "$install_dir/"
 	ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=1 go install github.com/RobBrazier/readflow@latest
 popd
 
-#REMOVEME? ynh_go_remove
+
 ynh_safe_rm "$install_dir/build"
 ynh_safe_rm "$install_dir/.cache"
 
