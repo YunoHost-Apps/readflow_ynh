@@ -18,6 +18,8 @@ ynh_restore "$install_dir"
 chown -R "$app": "$install_dir"
 chmod -R 750 "$install_dir"
 
+setfacl -R -m user:$app:rX $database_calibreweb
+
 #=================================================
 # RESTORE SYSTEM CONFIGURATION
 #=================================================

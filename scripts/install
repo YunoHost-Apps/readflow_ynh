@@ -44,6 +44,8 @@ ynh_config_add --template=".env" --destination="$install_dir/.env"
 chmod 400 "$install_dir/.env"
 chown "$app": "$install_dir/.env"
 
+setfacl -R -m user:$app:rX $database_calibreweb
+
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
