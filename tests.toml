@@ -11,7 +11,7 @@ test_format = 1.0
     preinstall = """
         sudo yunohost tools update apps
         sudo yunohost app install https://github.com/YunoHost-Apps/calibreweb_ynh/ \
-        -a "domain=domain.tld&init_main_permission=all_users&upload=true&public_library=true" --force 
+        -a "domain=domain.tld&init_main_permission=all_users&language=en&upload=true&public_library=true" --force 
     """
 
     # -------------------------------
